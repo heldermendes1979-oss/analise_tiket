@@ -19,8 +19,7 @@ jobs:
           python-version: '3.12'
 
       - name: Instalar bibliotecas
-        # O pandas-ta agora é baixado direto da fonte oficial (GitHub) para evitar erros
-        run: pip install yfinance pandas requests git+https://github.com/twopirllc/pandas-ta.git@main
+        run: pip install yfinance pandas requests git+https://github.com/twopirllc/pandas-ta.git
 
       - name: Rodar o script de análise
         env:
